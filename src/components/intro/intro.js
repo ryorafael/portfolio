@@ -1,11 +1,12 @@
 import React from "react";
 import "./intro.css";
 // import bg from "../../assets";
-//import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { GrContact } from "react-icons/gr";
 
 const Intro = () => {
   return (
-    <section id="intro">
+    <section id="intro" className="intro">
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
@@ -16,11 +17,11 @@ const Intro = () => {
         <p className="introPara">
           I am a skilled web designer passionate about what I do
         </p>
-        <link>
+        <ScrollLink to="intro" smooth={true} duration={500} className="btn">
           <button className="btn">
-            <img src="" alt=""></img>
+            <GrContact className="btnIcon" />
           </button>
-        </link>
+        </ScrollLink>
       </div>
       <img src="" alt="" className="bg" />
     </section>

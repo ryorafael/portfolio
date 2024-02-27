@@ -1,21 +1,21 @@
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-scroll";
-import contacting from "../../assets/contact.png";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../../assets/logo.png";
+import { MdOutlineContactPhone } from "react-icons/md";
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <img src={logo} alt="Logo" />
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">Clients</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
+        <ScrollLink to="home" smooth={true} duration={500} className="desktopMenuListItem">Home</ScrollLink>
+        <ScrollLink to="about" smooth={true} duration={500} className="desktopMenuListItem">About</ScrollLink>
+        <ScrollLink to="projects" smooth={true} duration={500} className="desktopMenuListItem">Projects</ScrollLink>
       </div>
       <button className="desktopMenuBtn">
-        <img src={contacting} alt="contact button" className="desktopMenuImg" />{" "}
+        <MdOutlineContactPhone size={24} color="purple" />
         Contact Me
       </button>
     </nav>
