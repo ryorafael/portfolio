@@ -1,7 +1,7 @@
 
 # Ryo Portfolio
 
-This project is my portfolio to show my projects that I have done to potiential recruiters or anyone who may be interested in my work
+This project is my portfolio to show my projects that I have done to potential recruiters or anyone who may be interested in my work
 
 
 
@@ -27,6 +27,7 @@ set to add portfolio of previous and current projects
 
 -finished navbar section, intro section and skills. Imported icons from https://react-icons.github.io/react-icons/search/#q=javascript
 
+-added skills, project, footer and contact section. Everything is formatted for changing with my current projects later. Added a fonctanility with email.js to link my contact form with my actual email. Added a responsive navbar for phone users.
 
 
 ## Acknowledgements
