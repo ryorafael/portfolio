@@ -14,6 +14,8 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          e.target.reset();
+          alert("Email Sent");
         },
         (error) => {
           console.log("FAILED...", error.text);
