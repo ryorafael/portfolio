@@ -1,6 +1,5 @@
 import React from "react";
 import "./intro.css";
-// import bg from "../../assets";
 import { Link as ScrollLink } from "react-scroll";
 import { GrContact } from "react-icons/gr";
 
