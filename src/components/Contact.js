@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef();
@@ -29,8 +32,18 @@ const Contact = () => {
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc"></span>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <input type="text" className="name" placeholder="Your Name" name='your_name' />
-          <input type="email" className="email" placeholder="Your Email" name="your_email" />
+          <input
+            type="text"
+            className="name"
+            placeholder="Your Name"
+            name="your_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Your Email"
+            name="your_email"
+          />
           <textarea
             className="msg"
             name="message"
@@ -41,10 +54,27 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img src="{}" alt="" className="link" />
-            <img src="{}" alt="" className="link" />
-            <img src="{}" alt="" className="link" />
-            <img src="{}" alt="" className="link" />
+            <a
+              href="https://www.linkedin.com/in/ryo-rafael-bba453260/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin className="link" />
+            </a>
+            <a
+              href="https://github.com/ryorafael"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaGithub className="link" />
+            </a>
+            <a
+              href="https://www.instagram.com/ryorafael18/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaInstagram className="link" />
+            </a>
           </div>
         </form>
       </div>
