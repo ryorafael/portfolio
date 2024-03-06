@@ -38,6 +38,8 @@
   border: none;
   border-radius: 0.5rem;
   background: rgb(40, 40, 40);
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
 }
 
 .submitBtn {
@@ -46,6 +48,9 @@
   border-radius: 0.5rem;
   border: none;
   margin: 2rem;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
 }
 
 .links {

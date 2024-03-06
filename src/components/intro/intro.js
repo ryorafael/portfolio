@@ -11,12 +11,13 @@ const Intro = () => {
         <span className="introText">
           I'm<span className="introName"> Ryo Rafael</span>
           <br />
-          Website Designer
+          Fullstack Developer
         </span>
         <p className="introPara">
-          I am a skilled web designer passionate about what I do
+          I am a fullstack dev looking for an internship starting from september
+          2024 for one year, 4 days a week.
         </p>
-        <ScrollLink to="intro" smooth={true} duration={500} className="btn">
+        <ScrollLink to="about" smooth={true} duration={500} className="btn">
           <button className="btn">
             <GrContact className="btnIcon" />
           </button>

@@ -9,6 +9,8 @@
   font-size: 1rem;
   max-width: 51rem;
   padding: 0 2rem;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
 }
 
 .skillBars {
@@ -48,6 +50,9 @@
 .skillBarText > p {
   font-size: 0.9rem;
   font-weight: 200;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
 }
 
 @media screen and (max-width: 720px) {

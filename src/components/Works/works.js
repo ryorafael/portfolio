@@ -11,7 +11,7 @@ const Works = () => {
   return (
     <section id="works">
       <h2 className="workstitle">My Portfolio</h2>
-      <span className="worksDesc">Filler text</span>
+      <span className="worksDesc">I have done multiple group projects and personal projects that you can see below</span>
       <div className="worksImgs">
         <div className="worksImgContainer">
       <a href="https://github.com/ryorafael/portfolio" target="_blank" rel="noopener noreferrer">

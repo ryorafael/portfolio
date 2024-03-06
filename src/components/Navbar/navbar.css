@@ -39,6 +39,9 @@
   justify-content: center;
   padding: 0 1rem;
   border-radius: 2rem;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
 }
 
 .desktopMenuImg {
@@ -58,6 +61,9 @@
   display: none;
   object-fit: cover;
   height: 1.8rem;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
 }
 .navMenu {
   position: absolute;
