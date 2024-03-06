@@ -2,8 +2,12 @@ import React from "react";
 import "./intro.css";
 import { Link as ScrollLink } from "react-scroll";
 import { GrContact } from "react-icons/gr";
+import myPdf from "../../assets/myPdfFile.pdf";
 
 const Intro = () => {
+  const openPDF = () => {
+    window.open(myPdf, "_blank");
+  };
   return (
     <section id="intro" className="intro">
       <div className="introContent">
@@ -18,7 +22,7 @@ const Intro = () => {
           2024 for one year, 4 days a week.
         </p>
         <ScrollLink to="about" smooth={true} duration={500} className="btn">
-          <button className="btn">
+          <button className="btn" onClick={openPDF}>
             <GrContact className="btnIcon" />
           </button>
         </ScrollLink>
