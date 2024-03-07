@@ -23,7 +23,7 @@ const Intro = () => {
         </p>
         <ScrollLink to="about" smooth={true} duration={500} className="btn">
           <button className="btn" onClick={openPDF}>
-            <GrContact className="btnIcon" />
+            <GrContact className="btnIcon" />Take a look at my resume
           </button>
         </ScrollLink>
       </div>
