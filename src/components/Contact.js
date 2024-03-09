@@ -3,7 +3,7 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 
 const Contact = () => {
   const form = useRef();
@@ -67,13 +67,6 @@ const Contact = () => {
               target="_blank"
             >
               <FaGithub className="link" />
-            </a>
-            <a
-              href="https://www.instagram.com/ryorafael18/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FaInstagram className="link" />
             </a>
           </div>
         </form>

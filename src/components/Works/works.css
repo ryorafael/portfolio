@@ -1,7 +1,7 @@
 #works {
   min-height: calc(100vh - 4rem);
   max-width: 60rem;
-  margin: 7rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
   text-align: center;
 }
@@ -17,30 +17,35 @@
   max-width: 45rem;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
-  color: white; 
-  margin: 2rem auto; 
+  color: white;
+  margin: 2rem auto;
+  cursor: pointer;
 }
 
 .worksImgs {
-  max-width: 65rem;
-  margin: 2rem auto; 
+  max-width: 100%;
+  margin: 2rem auto;
+  cursor: pointer;
 }
 
 .worksImgContainer {
   margin: 0.5rem;
+  align-items: center;
 }
 
 .worksImg {
   object-fit: cover;
   max-height: 30rem;
   max-width: 30rem;
-  margin: 0.5rem auto; 
+  margin: 0.5rem auto;
   border: 2px solid rgb(194, 97, 232);
   box-sizing: border-box;
+  align-content: center;
 }
 
 .worksbtn {
-  margin-top: 5rem; 
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   color: white;
   padding: 0.5rem 2.5rem;
   border: none;
@@ -49,10 +54,13 @@
   font-size: 1rem;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
   .worksImg {
-    width: calc(50% - 1rem);
+    max-width: 100%;
   }
 }

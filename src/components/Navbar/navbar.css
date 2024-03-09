@@ -16,7 +16,9 @@
 .logo {
   object-fit: cover;
   height: 3rem;
-  width: 4rem;
+  width: 15%;
+  max-width: 4rem;
+  margin-right: 1.5rem;
 }
 
 .desktopMenuListItem {
@@ -42,6 +44,7 @@
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: weight;
+  cursor: pointer;
 }
 
 .desktopMenuImg {
@@ -89,6 +92,10 @@
 @media screen and (max-width: 720px) {
   .mobMenu {
     display: flex;
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
   }
   .desktopMenu {
     display: none;

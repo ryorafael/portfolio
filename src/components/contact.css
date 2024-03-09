@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 16px;
 }
 
 .contactDesc {
@@ -52,6 +53,7 @@
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: weight;
+  cursor: pointer;
 }
 
 .links {
@@ -65,4 +67,5 @@
   width: 3rem;
   margin: 0 0.75rem;
   color: rgb(194, 97, 232);
+  cursor: pointer;
 }
