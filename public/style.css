@@ -4,12 +4,12 @@
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
-  background: rgb(30, 30, 30);
-  color: white;
+  background: #363636;
+  color: #f9f9f9;
   overflow: hidden;
   overflow-y: scroll;
 }

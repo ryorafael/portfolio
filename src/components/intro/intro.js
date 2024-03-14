@@ -3,7 +3,6 @@ import "./intro.css";
 import { Link as ScrollLink } from "react-scroll";
 import { GrContact } from "react-icons/gr";
 import myPdf from "../../assets/myPdfFile.pdf";
-import "animate.css";
 
 const Intro = () => {
   const openPDF = () => {
@@ -15,7 +14,7 @@ const Intro = () => {
         <span className="hello">Hello,</span>
         <span className="introText">
           I'm
-          <span className="animate__animated animate__tada introName">
+          <span className="introName">
             {" "}
             Ryo Rafael
           </span>

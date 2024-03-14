@@ -11,10 +11,12 @@
   padding: 0px 16px;
 }
 
-.contactDesc {
+.contactPageTitle {
   padding: 1rem;
-  font-size: medium;
-  font-weight: 300;
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
 }
 
 .contactForm {
@@ -39,7 +41,7 @@
   border: none;
   border-radius: 0.5rem;
   background: rgb(40, 40, 40);
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
 }
 
@@ -50,7 +52,7 @@
   border-radius: 0.5rem;
   border: none;
   margin: 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   cursor: pointer;

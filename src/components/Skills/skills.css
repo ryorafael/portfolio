@@ -1,15 +1,17 @@
 .skillTitle {
+  margin: 2rem 0;
+  padding: 1rem;
   font-size: 3rem;
-  font-weight: 600;
-  padding-top: 1.5rem;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
 }
 
 .skillDesc {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   max-width: 51rem;
   padding: 0 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   margin: 1.5rem;
 }

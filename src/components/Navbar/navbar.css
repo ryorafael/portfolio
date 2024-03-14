@@ -1,5 +1,5 @@
 .navbar {
-  background: rgb(30 30 30);
+  background: #363636;
   height: 5rem;
   width: 100vw;
   max-width: 75rem;
@@ -24,6 +24,7 @@
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
+  font-family: "Oswald", sans-serif;
 }
 
 .desktopMenuListItem:hover {
@@ -38,10 +39,10 @@
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 1rem;
   border-radius: 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   cursor: pointer;
@@ -64,7 +65,7 @@
   display: none;
   object-fit: cover;
   height: 1.8rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
 }
