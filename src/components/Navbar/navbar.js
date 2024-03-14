@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../../assets/logo.png";
-import { MdOutlineContactPhone } from "react-icons/md";
 import { HiBars3 } from "react-icons/hi2";
 
 
@@ -20,7 +19,7 @@ const Navbar = () => {
       <button className="desktopMenuBtn" onClick={() => {
       document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
       }} >
-        <MdOutlineContactPhone size={24} color="purple" />
+        
         Contact Me
       </button>
 

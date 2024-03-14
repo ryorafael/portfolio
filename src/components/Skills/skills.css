@@ -3,7 +3,7 @@
   padding: 1rem;
   font-size: 3rem;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .skillDesc {
@@ -11,7 +11,7 @@
   font-size: 1.2rem;
   max-width: 51rem;
   padding: 0 2rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   font-optical-sizing: auto;
   margin: 1.5rem;
 }
@@ -31,7 +31,7 @@
   margin: 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: rgb(50, 50, 50);
+  background-color: #dccfed;
 }
 
 #skills {
@@ -52,13 +52,13 @@
   height: 3rem;
   width: 3rem;
   margin-right: 2rem;
-  color: rgb(194, 97, 232);
+  color: black
 }
 
 .skillBarText > p {
   font-size: 0.9rem;
   font-weight: 200;
-  font-family: "EB Garamond", serif;
+  font-family: "Ubuntu Condensed", serif;
 }
 
 @media screen and (max-width: 720px) {

@@ -6,6 +6,10 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaPhp } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaNode } from "react-icons/fa6";
+import { SiTailwindcss } from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
+
+
 
 const Skills = () => {
   return (
@@ -39,6 +43,14 @@ const Skills = () => {
         </div>
         <div className="skillBar">
           <FaNode className="skillBarImg" />
+          <div className="skillBarText"></div>
+        </div>
+        <div className="skillBar">
+          <SiTailwindcss className="skillBarImg" />
+          <div className="skillBarText"></div>
+        </div>
+        <div className="skillBar">
+          <FaVuejs className="skillBarImg" />
           <div className="skillBarText"></div>
         </div>
       </div>

@@ -4,12 +4,12 @@
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
-  font-family: "Oswald", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
-  background: #363636;
-  color: #f9f9f9;
+  background: #291c3a;
+  color: #dedbe1;
   overflow: hidden;
   overflow-y: scroll;
 }
