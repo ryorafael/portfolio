@@ -1,10 +1,21 @@
 #works {
   min-height: calc(100vh - 4rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin: 0 auto;
   padding: 0 1rem;
   text-align: center;
 }
+
+/* overflow: hidden;
+width: 100vw;
+max-width: 65rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 0 auto;
+height: calc(100vh - 4rem); */
 
 .workstitle {
   margin: 2rem 0;
@@ -31,6 +42,9 @@
   max-width: 100%;
   margin: 2rem auto;
   cursor: pointer;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .worksImgContainer {
@@ -57,7 +71,6 @@
   background: rgb(194, 97, 232);
   font-size: 1rem;
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
   align-items: center;
   justify-content: center;
   cursor: pointer;

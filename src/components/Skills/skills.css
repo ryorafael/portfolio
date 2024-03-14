@@ -44,6 +44,7 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  height: calc(100vh - 4rem);
 }
 
 .skillBarImg {
@@ -58,8 +59,6 @@
   font-size: 0.9rem;
   font-weight: 200;
   font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
 }
 
 @media screen and (max-width: 720px) {
@@ -87,6 +86,7 @@
     justify-content: center;
     align-content: center;
     display: flex;
+    flex-wrap: wrap;
   }
   .skillBar {
     display: flex;
