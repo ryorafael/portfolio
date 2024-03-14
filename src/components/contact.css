@@ -62,11 +62,68 @@
   flex-wrap: wrap;
 }
 
-.link {
-  object-fit: cover;
-  height: 3rem;
-  width: 3rem;
-  margin: 0 0.75rem;
-  color: rgb(194, 97, 232);
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
   cursor: pointer;
 }
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #86128c;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
