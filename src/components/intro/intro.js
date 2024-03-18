@@ -1,7 +1,6 @@
 import React from "react";
 import "./intro.css";
-import { Link as ScrollLink } from "react-scroll";
-import { GrContact } from "react-icons/gr";
+import { FaDownload } from "react-icons/fa6";
 import myPdf from "../../assets/myPdfFile.pdf";
 
 const Intro = () => {
@@ -13,19 +12,22 @@ const Intro = () => {
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
-          I'm<span className="introName"> Ryo Rafael</span>
+          I'm
+          <span className="introName">
+            {" "}
+            Ryo Rafael
+          </span>
           <br />
           Fullstack Developer
         </span>
         <p className="introPara">
-          I am a fullstack dev looking for an internship starting from september
-          2024 for one year, 4 days a week.
+          I am looking for an internship starting from September
+          2024.
         </p>
-        <ScrollLink to="about" smooth={true} duration={500} className="btn">
           <button className="btn" onClick={openPDF}>
-            <GrContact className="btnIcon" />
+            <FaDownload className="btnIcon" />
+            <span className="btnText">Downloadable version of my resume</span>
           </button>
-        </ScrollLink>
       </div>
       <img src="" alt="" className="bg" />
     </section>

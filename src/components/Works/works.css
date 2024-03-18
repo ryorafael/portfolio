@@ -1,61 +1,200 @@
 #works {
   min-height: calc(100vh - 4rem);
-  max-width: 60rem;
+  max-width: 65rem;
   margin: 0 auto;
-  justify-content: center;
-  text-align: center;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .workstitle {
-  margin: 1rem 0;
+  margin: 2rem 0;
+  padding: 1rem;
+  margin: 2rem 0;
   font-size: 3rem;
+  font-weight: 400;
+  font-family: "Varela Round", sans-serif;
 }
 
 .worksDesc {
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   max-width: 45rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   font-optical-sizing: auto;
+  color: #dedbe1;
+  margin: 2rem auto;
+  cursor: pointer;
 }
 
-.worksImgs {
+.card-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  max-width: 65rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
-
-.worksImgContainer {
-  margin: 0.5rem;
-  flex: 0 0 calc(33.333% - 1rem);
-}
-
-.worksImg {
-  object-fit: cover;
-  flex-direction: row;
-  max-height: 30rem;
-  max-width: 30rem;
-  margin: 0.5rem;
-  border: 2px solid rgb(194, 97, 232);
-  box-sizing: border-box;
-}
-
 .worksbtn {
-  margin: 3rem, 0;
-  padding: 0.5rem 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  background: white;
-  font-size: 1rem;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  width: 10rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  overflow: hidden;
+  font-family: "Ubuntu Condensed", serif;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #dedbe1;
+  border: 1px solid #dedbe1;
+}
+
+.worksbtn:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #dedbe1, inset -4px -4px 12px #ffffff;
+}
+
+.worksbtn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgb(194, 97, 232);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.worksbtn:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: rgb(194, 97, 232);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.worksbtn:hover {
+  color: #dedbe1;
+  border: 1px solid rgb(194, 97, 232);
+}
+
+.worksbtn:hover:before {
+  top: -35%;
+  background-color: rgb(194, 97, 232);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.worksbtn:hover:after {
+  top: -45%;
+  background-color: rgb(194, 97, 232);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.carding {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  border-radius: 10px;
+  margin: 32px 20px;
+}
+
+.carding-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.carding:hover .carding-inner {
+  transform: rotateY(180deg);
+}
+
+.carding-front,
+.carding-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.carding-front {
+  color: #dedbe1;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.carding-back {
+  background-color: rgb(194, 97, 232);
+  color: #dedbe1;
+  display: flex;
+  align-items: center;
+  border: 10px solid rgb(194, 97, 232);
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+  font-family: "Ubuntu Condensed", serif;
+}
+
+.carding-inner {
+  position: relative;
+}
+
+.cardTitle,
+.cardDesc {
+  position: static;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #ffffff; /* Change the color to white or any other visible color */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Ubuntu Condensed", serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carding-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-link {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
-  .worksImg {
-    width: calc(50% - 1rem);
+  .card-row {
+    justify-content: space-around;
+  }
+
+  .carding {
+    max-width: 100%;
+    margin: 17px;
+  }
+  .cardTitle {
+    display: block; /* Change from flex to block */
+    margin: 0 auto; /* Center the title */
+    width: fit-content; 
   }
 }

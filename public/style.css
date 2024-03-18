@@ -1,14 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
-background: rgb(30, 30, 30);
-color: white;
-overflow: hidden;
-overflow-y: scroll;
+  background: #291c3a;
+  color: #dedbe1;
+  overflow: hidden;
+  overflow-y: scroll;
 }

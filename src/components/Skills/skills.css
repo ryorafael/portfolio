@@ -1,16 +1,19 @@
 .skillTitle {
+  margin: 2rem 0;
+  padding: 1rem;
   font-size: 3rem;
-  font-weight: 600;
-  padding-top: 1.5rem;
+  font-weight: 400;
+  font-family: "Varela Round", sans-serif;
 }
 
 .skillDesc {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   max-width: 51rem;
   padding: 0 2rem;
-  font-family: "EB Garamond", serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   font-optical-sizing: auto;
+  margin: 1.5rem;
 }
 
 .skillBars {
@@ -22,10 +25,13 @@
 
 .skillBar {
   display: flex;
-  margin: 1rem;
-  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
-  background-color: rgb(50, 50, 50);
+  background-color: #dccfed;
 }
 
 #skills {
@@ -38,6 +44,7 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  height: calc(100vh - 4rem);
 }
 
 .skillBarImg {
@@ -45,14 +52,13 @@
   height: 3rem;
   width: 3rem;
   margin-right: 2rem;
+  color: black;
 }
 
 .skillBarText > p {
   font-size: 0.9rem;
   font-weight: 200;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
+  font-family: "Ubuntu Condensed", serif;
 }
 
 @media screen and (max-width: 720px) {
@@ -63,13 +69,30 @@
 
 @media screen and (max-width: 480px) {
   .skillBarText > p {
-    font-size: 3vw;
+    font-size: 18px;
   }
   .skillBarImg {
-    height: 2.25rem;
-    width: 2.25rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
   }
   .skillBarText > h2 {
-    font-size: 5vw;
+    font-size: 18px;
+  }
+  .skillBars {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skillBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
   }
 }

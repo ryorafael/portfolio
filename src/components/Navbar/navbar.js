@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../../assets/logo.png";
-import { MdOutlineContactPhone } from "react-icons/md";
+import { HiBars3 } from "react-icons/hi2";
+
 
 
 const Navbar = () => {
@@ -18,11 +19,11 @@ const Navbar = () => {
       <button className="desktopMenuBtn" onClick={() => {
       document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
       }} >
-        <MdOutlineContactPhone size={24} color="purple" />
+        
         Contact Me
       </button>
 
-      <img src={logo} alt="mobMenu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)} />
+      <HiBars3 alt="mobMenu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)} />
       <div className="navMenu" style={{display: showMenu? 'flex': 'none'}}>
         <ScrollLink activeClass="active" to="intro" offset={-50} spy={true} smooth={true} duration={500} className="ListItem" onClick={()=>setShowMenu(false)}>Home</ScrollLink>
         <ScrollLink activeClass="active" to="skills" offset={-50} spy={true}  smooth={true} duration={500} className="ListItem" onClick={()=>setShowMenu(false)}>About</ScrollLink>

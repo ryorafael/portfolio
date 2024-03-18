@@ -1,13 +1,11 @@
 .footer {
-  width: 100vw;
   height: 4rem;
-  background: rgb(40, 40, 40);
+  background: linear-gradient(#291c3a, #2e184b); /* Gradient with the same color for both ends */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 300;
   font-size: small;
-  font-family: "EB Garamond", serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
 }
