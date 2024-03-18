@@ -14,7 +14,7 @@ import { FaVuejs } from "react-icons/fa";
 const Skills = () => {
   return (
     <section id="skills">
-      <span className="skillTitle">What languages I know</span>
+      <span className="skillTitle">Coding Languages</span>
       <span className="skillDesc">
         I am skilled in multiple languages such as HTML, CSS, Javascript, PHP,
         React.js, Node.js and Express.js. I am learning Swift, Python and React
