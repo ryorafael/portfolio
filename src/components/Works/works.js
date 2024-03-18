@@ -16,9 +16,17 @@ const Works = () => {
       </span>
       <div className="card-row">
         <div class="carding">
+          <a
+            href="https://github.com/ryorafael/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <p className="cardTitle">Portfolio</p>
+          </a>
           <div class="carding-inner">
             <div class="carding-front">
-              <img src={portfolioimg} alt="" className="carding" />
+              <img src={portfolioimg} alt="porfolio" className="carding" />
             </div>
             <div class="carding-back">
               <p className="cardDesc">
@@ -29,9 +37,21 @@ const Works = () => {
           </div>
         </div>
         <div class="carding">
+          <a
+            href="https://github.com/ryorafael/personal-project-lff"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <p className="cardTitle">Le Fou Frog</p>
+          </a>
           <div class="carding-inner">
             <div class="carding-front">
-              <img src={lefoufrog} alt="" className="carding" />
+              <img
+                src={lefoufrog}
+                alt="website for the restaurant le fou frog"
+                className="carding"
+              />
             </div>
             <div class="carding-back">
               <p className="cardDesc">
@@ -44,9 +64,21 @@ const Works = () => {
           </div>
         </div>
         <div class="carding">
+          <a
+            href="https://github.com/adatechschool/reseau-social-php-ryo-walid-nicolas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <p className="cardTitle">Social Media Project</p>
+          </a>
           <div class="carding-inner">
             <div class="carding-front">
-              <img src={catsocialmedia} alt="" className="carding" />
+              <img
+                src={catsocialmedia}
+                alt="social media project"
+                className="carding"
+              />
             </div>
             <div class="carding-back">
               <p className="cardDesc">
@@ -58,6 +90,14 @@ const Works = () => {
           </div>
         </div>
         <div class="carding">
+          <a
+            href="https://github.com/adatechschool/projet-collectif-dataviz-ryo-taous-nadege"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <p className="cardTitle">Data Visualization Project</p>
+          </a>
           <div class="carding-inner">
             <div class="carding-front">
               <img src={dataviz} alt="" className="carding" />
@@ -71,12 +111,24 @@ const Works = () => {
           </div>
         </div>
         <div class="carding">
+          <a
+            href="https://github.com/adatechschool/onmeuble"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link"
+          >
+            <p className="cardTitle">On Meuble</p>
+          </a>
           <div class="carding-inner">
             <div class="carding-front">
               <img src={onmeuble} alt="" className="carding" />
             </div>
             <div class="carding-back">
-              <p className="cardDesc"></p>
+              <p className="cardDesc">
+                A group project of 8 we worked on both back end and front end.
+                Back end we used express.js and supabase and front we used
+                react.
+              </p>
             </div>
           </div>
         </div>

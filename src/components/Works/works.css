@@ -33,7 +33,6 @@
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
-
 .worksbtn {
   display: inline-block;
   transition: all 0.2s ease-in;
@@ -110,7 +109,7 @@
   height: 200px;
   perspective: 1000px;
   border-radius: 10px;
-  margin: 8px 8px;
+  margin: 32px 20px;
 }
 
 .carding-inner {
@@ -153,16 +152,49 @@
   justify-content: center;
   font-size: 24px;
   transform: rotateY(180deg);
+  font-family: "Ubuntu Condensed", serif;
+}
+
+.carding-inner {
+  position: relative;
+}
+
+.cardTitle,
+.cardDesc {
+  position: static;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #ffffff; /* Change the color to white or any other visible color */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Ubuntu Condensed", serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carding-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-link {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
   .card-row {
-    justify-content: space-around; 
+    justify-content: space-around;
   }
 
   .carding {
-    width: calc(50% - 16px); 
     max-width: 100%;
-    margin: 8px; 
+    margin: 17px;
+  }
+  .cardTitle {
+    display: block; /* Change from flex to block */
+    margin: 0 auto; /* Center the title */
+    width: fit-content; 
   }
 }
