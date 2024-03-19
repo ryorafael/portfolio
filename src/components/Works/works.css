@@ -165,12 +165,20 @@
   top: 0;
   left: 0;
   font-size: 16px;
-  color: #ffffff; /* Change the color to white or any other visible color */
+  color: #ffffff;
   padding: 4px 8px;
   border-radius: 4px;
   font-family: "Ubuntu Condensed", serif;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.cardTitle {
+  text-decoration: underline;
+}
+
+.cardTitle:hover {
+  color: rgb(128, 0, 255);
 }
 
 .carding-img {
@@ -195,6 +203,6 @@
   .cardTitle {
     display: block; /* Change from flex to block */
     margin: 0 auto; /* Center the title */
-    width: fit-content; 
+    width: fit-content;
   }
 }

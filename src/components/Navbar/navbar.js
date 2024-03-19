@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo3.png";
 import { HiBars3 } from "react-icons/hi2";
 
 
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <nav className="navbar">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="logo" className="logo"/>
       <div className="desktopMenu">
         <ScrollLink activeClass="active" to="intro" offset={-50} spy={true} smooth={true} duration={500} className="desktopMenuListItem">Home</ScrollLink>
         <ScrollLink activeClass="active" to="skills" offset={-50} spy={true}  smooth={true} duration={500} className="desktopMenuListItem">About</ScrollLink>

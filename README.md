@@ -35,4 +35,5 @@ set to add portfolio of previous and current projects
 ## Acknowledgements
 
  - GreatStack for the help on learning how to use react.js 
+ - Illustration by <a href="https://icons8.com/illustrations/author/RogqKjMRAQ79">xopolin</a> from <a href="https://icons8.com/illustrations">Ouch!</a> 
  

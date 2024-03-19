@@ -2,6 +2,7 @@ import React from "react";
 import "./intro.css";
 import { FaDownload } from "react-icons/fa6";
 import myPdf from "../../assets/myPdfFile.pdf";
+import hazeImg from "../../assets/hazedrawing.png"
 
 const Intro = () => {
   const openPDF = () => {
@@ -29,7 +30,7 @@ const Intro = () => {
             <span className="btnText">Downloadable version of my resume</span>
           </button>
       </div>
-      <img src="" alt="" className="bg" />
+      <img src={hazeImg} alt="illustration by xopolin" className="bg" />
     </section>
   );
 };

@@ -9,10 +9,8 @@
 
 .bg {
   position: absolute;
-  z-index: -1;
-  top: -4rem;
+  top: 0rem;
   object-fit: cover;
-  height: 100vh;
   right: 0;
 }
 
@@ -64,13 +62,13 @@
   cursor: pointer;
   font-size: 18px;
   border-radius: 0.5em;
-  background: #DEDBE1;
-  border: 1px solid #DEDBE1;
+  background: #dedbe1;
+  border: 1px solid #dedbe1;
 }
 
 .btn:active {
   color: #666;
-  box-shadow: inset 4px 4px 12px #DEDBE1, inset -4px -4px 12px #ffffff;
+  box-shadow: inset 4px 4px 12px #dedbe1, inset -4px -4px 12px #ffffff;
 }
 
 .btn:before {
@@ -104,7 +102,7 @@
 }
 
 .btn:hover {
-  color: #DEDBE1;
+  color: #dedbe1;
   border: 1px solid rgb(194, 97, 232);
 }
 
@@ -146,7 +144,11 @@
     font-size: 0.75rem;
   }
   .bg {
-    right: -10vw;
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: auto;
+    top: auto;
   }
   .hello {
     font-size: 4.5vw;

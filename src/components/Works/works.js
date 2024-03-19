@@ -133,7 +133,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-      <button className="worksbtn">See More</button>
+      <a href="https://github.com/ryorafael" target="_blank" rel="noopener noreferrer" class="worksbtn">See More on Github</a>
     </section>
   );
 };
