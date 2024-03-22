@@ -53,8 +53,8 @@ const Navbar = () => {
         <ScrollLink activeClass="active" to="works" offset={-50} spy={true} smooth={true} duration={500} className="ListItem" onClick={()=>setShowMenu(false)}>{t('Projects')}</ScrollLink>
         <ScrollLink activeClass="active" to="contact" offset={-50} spy={true} smooth={true} duration={500} className="ListItem" onClick={()=>setShowMenu(false)}>{t('Contact')}</ScrollLink>
         <div>
-          <button onClick={() => changeLanguage('en')}>EN</button>
-          <button onClick={() => changeLanguage('fr')}>FR</button>
+          <button className="mobBtn" onClick={() => changeLanguage('en')}>EN</button>
+          <button className="mobBtn" onClick={() => changeLanguage('fr')}>FR</button>
         </div>
       </div>
     </nav>
