@@ -1,3 +1,4 @@
+/* General styling */
 #about {
   overflow: hidden;
   width: 100vw;
@@ -6,8 +7,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 4rem auto; /* Increased margin to provide more space */
+  height: auto; /* Changed height to auto to allow for dynamic content */
 }
 
 .aboutTitle {
@@ -21,8 +22,8 @@
 .aboutmepara {
   font-weight: 400;
   font-size: 1.2rem;
-  max-width: 51rem;
-  padding: 0 2rem;
+  max-width: 90%; /* Adjusted max-width */
+  padding: 0 1rem; /* Adjusted padding for smaller screens */
   font-family: "Ubuntu Condensed", sans-serif;
   font-optical-sizing: auto;
   margin: 1.5rem;
@@ -38,67 +39,10 @@
   font-family: inherit;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .aboutmepara {
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.2rem;
-  max-width: 51rem;
-  padding: 0 2rem;
-  font-family: "Ubuntu Condensed", sans-serif;
-  font-optical-sizing: auto;
-  margin: 1.5rem;
+/* Media query for smaller devices */
+@media only screen and (max-width: 320px) { /* Adjust max-width as needed */
+  .aboutmepara {
+    padding: 0 0.5rem; /* Further reduce padding for smaller screens */
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
 }
-
-.aboutcontainer {
-  text-align: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.about {
-  overflow: hidden;
-  width: 100vw;
-  max-width: 51rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  height: calc(100vh - 4rem);
-}
-
-h2 {
-  margin: 2rem 0;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: "Varela Round", sans-serif;
-}
-
-#about {
-  overflow: hidden;
-  width: 100vw; 
-  max-width: 65rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  height: calc(100vh - 4rem); 
-} */
