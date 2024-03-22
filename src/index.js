@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Suspense } from 'react';
 import App from './App';
+import './i18n'; // Import i18n configuration
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback="Loading...">
+      <App />
+    </Suspense>
   </React.StrictMode>
 );

@@ -1,8 +1,8 @@
 #intro {
-  height: calc(100vh - 4rem);
+  height: 100vh;
   max-width: 75rem;
   margin: 5rem auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   padding: 2rem;
 }
@@ -25,7 +25,7 @@
 }
 
 .introText {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   font-family: inherit;
 }
@@ -141,7 +141,7 @@
   }
   .introPara {
     word-wrap: break-word;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
   }
   .bg {
     position: relative;
@@ -156,5 +156,32 @@
   .btn {
     width: 20rem;
     height: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: auto;
+    top: auto;
+  }
+  #intro {
+    height: 100vh;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+  .btn {
+    width: 20rem;
+    height: 5rem;
+  }
+  .introContent {
+    font-size: 2rem;
+  }
+  .introPara {
+    word-wrap: break-word;
+    font-size: 1.25rem;
   }
 }

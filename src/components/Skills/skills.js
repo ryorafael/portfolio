@@ -8,17 +8,18 @@ import { RiReactjsFill } from "react-icons/ri";
 import { FaNode } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section id="skills">
-      <span className="skillTitle">Coding Languages</span>
+      <span className="skillTitle">{t("Hard Skills")}</span>
       <span className="skillDesc">
-        I am skilled in multiple languages such as HTML, CSS, Javascript, PHP,
-        React.js, Node.js and Express.js. I am learning Swift, Python and React
-        Native.
+      <p>{t("I am skilled in multiple languages such as HTML CSS Javascript PHP Reactjs Nodejs and Expressjs")}</p>
+      <p>{t("I am learning Swift Python and React Native")}</p>
       </span>
       <div className="skillBar">
         <div className="skillBar">

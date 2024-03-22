@@ -17,6 +17,13 @@
   width: 15%;
   max-width: 4rem;
   margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.desktopMenu {
+  justify-content: center;
+  display: flex;
+  margin-right: -6rem;
 }
 
 .desktopMenuListItem {
@@ -141,6 +148,15 @@
   padding: 0.5rem 3rem;
   margin: 0.25rem;
   background: rgb(30, 30, 30);
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.buttonGroup button {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 720px) {

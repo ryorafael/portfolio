@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,29 +28,29 @@ const Contact = () => {
   return (
     <section id="contactPage">
       <div id="contact">
-        <h1 className="contactPageTitle">Contact Me</h1>
+        <h1 className="contactPageTitle">{t("Contact Me")}</h1>
         <span className="contactDesc"></span>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             className="name"
-            placeholder="Your Name"
+            placeholder={t("Your Name")}
             name="your_name"
           />
           <input
             type="email"
             className="email"
-            placeholder="Your Email"
+            placeholder={t("Your Email")}
             name="your_email"
           />
           <textarea
             className="msg"
             name="message"
             rows={5}
-            placeholder="Your Message"
+            placeholder={t("Your Message")}
           ></textarea>
           <button type="submit" value="Send" className="submitBtn">
-            Submit
+            {t("Submit")}
           </button>
           <div className="links">
             <div class="card">
