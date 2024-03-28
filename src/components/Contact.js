@@ -9,6 +9,15 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const name = form.current.your_name.value.trim();
+    const email = form.current.your_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
     emailjs
       .sendForm("service_p4rwoqm", "template_ujmhtpf", form.current, {
         publicKey: "4EZqDjx_dUyh_jiK6",

@@ -8,9 +8,8 @@ import { RiReactjsFill } from "react-icons/ri";
 import { FaNode } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
-import { useTranslation } from 'react-i18next';
-
-
+import { IoLogoFigma } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -18,8 +17,12 @@ const Skills = () => {
     <section id="skills">
       <span className="skillTitle">{t("Hard Skills")}</span>
       <span className="skillDesc">
-      <p>{t("I am skilled in multiple languages such as HTML CSS Javascript PHP Reactjs Nodejs and Expressjs")}</p>
-      <p>{t("I am learning Swift Python and React Native")}</p>
+        <p>
+          {t(
+            "I am skilled in multiple languages such as HTML CSS Javascript PHP Reactjs Nodejs and Expressjs"
+          )}
+        </p>
+        <p>{t("I am learning Swift Python and React Native")}</p>
       </span>
       <div className="skillBar">
         <div className="skillBar">
@@ -43,6 +46,10 @@ const Skills = () => {
           <div className="skillBarText"></div>
         </div>
         <div className="skillBar">
+          <FaVuejs className="skillBarImg" />
+          <div className="skillBarText"></div>
+        </div>
+        <div className="skillBar">
           <FaNode className="skillBarImg" />
           <div className="skillBarText"></div>
         </div>
@@ -51,7 +58,7 @@ const Skills = () => {
           <div className="skillBarText"></div>
         </div>
         <div className="skillBar">
-          <FaVuejs className="skillBarImg" />
+          <IoLogoFigma className="skillBarImg" />
           <div className="skillBarText"></div>
         </div>
       </div>
